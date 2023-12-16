@@ -43,7 +43,6 @@ def symbol_extractor(parse_file, symbol_output_file):
                     symbol_output_file.write(b'\n')
         symbol_output_file.write(b'\n')
                 
-
 if __name__ == '__main__':
     folder_path = sys.argv[1]
     output_file_path = "output.txt"
