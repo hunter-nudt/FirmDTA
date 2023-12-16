@@ -1,0 +1,38 @@
+#ifndef FDTAF_TAINT_TCG
+#define FDTAF_TAINT_TCG
+
+#include "tcg/tcg-op.h"
+#include "tcg/tcg.h"
+
+extern TCGOp *last_op;
+
+#if TARGET_LONG_BITS == 32
+#define find_shadow_arg find_shadow_arg_i32
+#define find_shadow_reg find_shadow_reg_i32
+#else
+#define find_shadow_arg find_shadow_arg_i64
+#define find_shadow_reg find_shadow_reg_i64
+#endif
+
+#ifdef TARGET_I386
+#define find_shadow_offset find_shadow_offset_i386
+#elif defined(TARGET_ARM)
+#define find_shadow_offset find_shadow_offset_arm
+#elif defined(TARGET_MIPS)
+#define find_shadow_offset find_shadow_offset_mips
+#endif
+
+extern TCGv_i64 taint_temps;
+TCGv shadow_arg[TCG_MAX_TEMPS];
+
+TCGv_i32 find_shadow_reg_i32(TCGv_i32 reg, intptr_t offset, const char *name);
+TCGv_i64 find_shadow_reg_i64(TCGv_i64 reg, intptr_t offset, const char *name);
+TCGv_i32 find_shadow_arg_i32(TCGArg arg);
+TCGv_i64 find_shadow_arg_i64(TCGArg arg);
+int find_shadow_offset_i386(int offset);
+int find_shadow_offset_arm(int offset);
+int find_shadow_offset_mips(int offset);
+void clean_shadow_arg(void);
+void optimize_taint(TCGOp *last_op);
+
+#endif /* FDTAF_TAINT_TCG */
