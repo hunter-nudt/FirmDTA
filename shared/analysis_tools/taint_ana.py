@@ -92,12 +92,17 @@ def load_taint_data(taint_file_path):
                 if is_load == 1:
                     for i in range(0,size):
                         addr = hex(int(taint_mem_msg[1], 16) + i)
-                        new_taint_msg.load_addr.append(str(addr)) 
-                        # print(new_taint_msg.load_addr)
+                        for j in range(0, len(new_taint_msg.load_addr)):
+                            if addr != hex(int(new_taint_msg.load_addr[j], 16)):
+                                new_taint_msg.load_addr.append(str(addr))   
+                                print(new_taint_msg.load_addr)
                 else:
                     for i in range(0,size):
                         addr = hex(int(taint_mem_msg[1], 16) + i)
-                        new_taint_msg.store_addr.append(str(addr))  
+                        for j in range(0, len(new_taint_msg.store_addr)):
+                            if addr != hex(int(new_taint_msg.store_addr[j], 16)):
+                                new_taint_msg.store_addr.append(str(addr))
+                                
             taint_data_flow.append(new_taint_msg)
             taint_data_flow_no.append(new_taint_msg.pc_base)
     print(taint_data_flow[len(taint_data_flow)-1].load_addr)
@@ -158,13 +163,17 @@ def find_src_func(taint_addr, index, src_pc_base):
         index = index - 1
         for i in range(len(taint_data_flow[index].store_addr)):
             if taint_data_flow[index].store_addr[i] == taint_addr:
-                # print(taint_addr)                
-                G.add_node(taint_data_flow[init_index], edgecolor = "#000000", data = taint_data_flow[init_index])                      
-                G.add_node(taint_data_flow[index], edgecolor = "#000000", data = taint_data_flow[index])
-                G.add_edge(taint_data_flow[init_index], taint_data_flow[index])
-                if(len(taint_data_flow[index].load_addr) != 0):
-                    for j in range(len(taint_data_flow[index].load_addr)):
-                        find_src_func(taint_data_flow[index].load_addr[j], index, taint_data_flow[index].pc_base)
+                # print(taint_addr)
+                if taint_data_flow[index] in G.nodes:
+                    G.add_edge(taint_data_flow[init_index], taint_data_flow[index])
+                    break 
+                else:           
+                    G.add_node(taint_data_flow[init_index], edgecolor = "#000000", data = taint_data_flow[init_index])                      
+                    G.add_node(taint_data_flow[index], edgecolor = "#000000", data = taint_data_flow[index])
+                    G.add_edge(taint_data_flow[init_index], taint_data_flow[index])
+                    if(len(taint_data_flow[index].load_addr) != 0):
+                        for j in range(len(taint_data_flow[index].load_addr)):
+                            find_src_func(taint_data_flow[index].load_addr[j], index, taint_data_flow[index].pc_base)
 
 # G.add_edges_from(edges)
 
@@ -176,10 +185,10 @@ def search_taint_path():
         print(taint_addr)
         find_src_func(taint_addr, index, init_pc_base)
     for i in range(len(taint_data_flow[-1].load_addr)):
-        G.add_node(taint_data_flow[index], edgecolor = "#FF9800", data = taint_data_flow[index])       
+        G.add_node(taint_data_flow[index], edgecolor = "#FF9800", data = taint_data_flow[index])
       
 if __name__ == '__main__':  
-    symbol_file_path = "symbol_extract"
+    symbol_file_path = "symbol_table"
     taint_file_path = "guest_taint_log"
     ins_file_path = "guest_ins_flow_log"
     load_symbol_info(symbol_file_path)
@@ -196,7 +205,7 @@ if __name__ == '__main__':
     
     node_labels = {}
     for node in G.nodes:
-        if G.nodes[node]['data'].proc_name != G.nodes[node]['data'].mod_name:
+        if int(G.nodes[node]['data'].pc_base, 16) > 0x600000:
             current_ins_no = int(G.nodes[node]['data'].ins_no, 10)
             for i in range(len(ins_flow)):
                 if int(ins_flow[i].ins_no, 10) == current_ins_no:
@@ -205,7 +214,7 @@ if __name__ == '__main__':
                     # print(current_ins_no_pre)
             while True:
                 current_ins_no_pre = current_ins_no_pre - 1
-                if ins_flow[current_ins_no_pre].proc_name == ins_flow[current_ins_no_pre].mod_name:
+                if int(ins_flow[current_ins_no_pre].pc_base, 16) < 0x600000:
                     if ins_flow[current_ins_no_pre].proc_name == G.nodes[node]['data'].proc_name:
                         G.nodes[node]['data_prev'] = ins_flow[current_ins_no_pre]
                         for i in range(len(symbol_file_name_list)):
@@ -215,10 +224,10 @@ if __name__ == '__main__':
                                         if int(ins_flow[current_ins_no_pre].pc_base, 16) <= symbol_list[i].symbol_msg[j].func_base + symbol_list[i].symbol_msg[j].func_size:
                                             G.nodes[node]['data_prev'].func_name = symbol_list[i].symbol_msg[j].func_name
                         break
-                
+                    
             while True:
                 current_ins_no_next = current_ins_no_next + 1
-                if ins_flow[current_ins_no_next].proc_name == ins_flow[current_ins_no_next].mod_name:
+                if int(ins_flow[current_ins_no_next].pc_base, 16) < 0x600000:
                     if ins_flow[current_ins_no_next].proc_name == G.nodes[node]['data'].proc_name:
                         G.nodes[node]['data_next'] = ins_flow[current_ins_no_next]
                         for i in range(len(symbol_file_name_list)):
