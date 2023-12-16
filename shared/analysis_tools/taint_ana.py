@@ -131,7 +131,6 @@ def load_symbol_info(symbol_file_path):
                 new_symbol_file.symbol_msg.append(temp_symbol_info)
             symbol_list.append(new_symbol_file)
     symbol_file_name_list.pop()
-    # print(hex(symbol_list[0].symbol_msg[1].func_base))
     # print(symbol_file_name_list[-1])
 
 def load_ins_flow(ins_file_path):
