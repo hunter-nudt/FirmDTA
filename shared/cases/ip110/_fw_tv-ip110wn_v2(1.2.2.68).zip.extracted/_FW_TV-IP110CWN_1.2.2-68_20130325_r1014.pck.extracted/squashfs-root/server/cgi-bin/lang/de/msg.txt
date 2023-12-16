@@ -1,0 +1,151 @@
+;German
+[resolution]
+0=VGA
+1=QVGA
+2=QQVGA
+[Viewer]
+0=Java Applet
+1=Ruhebild
+2=Push-Dienst
+[enable]
+0=Deaktivieren
+1=Aktivieren
+[quality]
+0=Niedrigste
+1=Niedrige
+2=Normal
+3=Hohe
+4=Höchste
+[Policy]
+0=Statische
+1=DHCP
+2=PPPoE
+[AuthMode]
+0=Offen
+1=Shared-Key
+2=WPA-PSK
+3=WPA2-PSK
+4=WPA-PSK/WPA2-PSK
+[SecMethod]
+0=keine(-r/s)
+1=WEP
+2=TKIP
+3=AES
+4=Auto(TKIP/AES)
+[Mode]
+0=Infrastruktur
+1=Ad-Hoc
+[ModelName]
+0=
+1=Drahtlos
+[Always]
+0=always
+[Usb]
+0=Usb not available
+[notConnected]
+0=Nicht Verbunden
+[errHttp]
+0=Http hochladen ist OK!
+1=Http-Verbindung fehlgeschlagen
+2=Http-Dateischreiben fehlgeschlagen
+[errFtp]
+0=Ftp hochladen ist OK!
+1=Ftp-Verbindung fehlgeschlagen
+2=Ftp-Dateischreiben fehlgeschlagen
+[errEmail]
+0=Email-Server Einstellung ist OK!
+1=Email senden fehlgeschlagen
+[errSamba]
+0=Server schreiben Test ist OK!
+1=Der Server ist bereits mit der alten Einstellung installiert. Test beendet.
+2=Server installieren fehlgeschlagen
+3=Dateischreiben fehlgeschlagen
+4=Server entfernen fehlgeschlagen
+[errJabber]
+0=Jabber-Servereinstellung ist OK!
+1=Authentifizierung fehlgeschlagen
+2=Server lookup fehlgeschlagen
+3=Verbindungszeit überschritten
+4=Authorisierung fehlgeschlagen
+5=Sofortnachricht senden fehlgeschlagen
+[testFtp]
+0=Das ist ein ftp Test
+[testSamba]
+0=Das ist ein Samba Test
+[testEmail]
+0=Test Mail
+[testEmailTitle]
+0=Test Mail
+[errFile]
+0=Die Datei ist keine gültige config-Datei
+[noFile]
+0=Keine Datei
+[updateRun]
+0=Firmware-Aktualisierungsprozess läuft bereits
+[notCorrect]
+0=kein korrektes Modell
+[notValid]
+0=keine gültige Firmware
+[fileErr]
+0=Dateifehler
+[3gpp]
+0=Deaktivieren
+1=Aktiviere mit Audio
+2=Aktiviere ohne Audio
+[Language]
+0=English
+1=繁體中文
+2=简体中文
+3=Deutsch
+4=Français
+5=Español
+6=Italiano
+7=日本語
+[RTSP Auth]
+0=Deaktivieren
+1=Grund
+2=Digest
+[auth]
+0=keine(-r/s)
+1=SMTP
+[encrypt]
+0=Deaktivieren
+1=Aktivieren
+[starttls]
+0=Deaktivieren
+1=Aktivieren
+[SD]
+0=SD-Karte nicht verfügbar
+1=SD-Karte ist read only
+[IR]
+0=Auto
+1=AUS
+[IRCut]
+0=Auto
+1=Tag-Modus
+[category]
+0=Film
+1=Autos
+2=Musik
+3=Haustiere
+4=Sport
+5=Travel
+6=Games
+7=Comedy
+8=People
+9=News
+10=Entertainment
+11=Bildung
+12=Howto
+13=Nonprofit
+14=Technologie
+[Startup]
+0=keine(-r/s)
+1=1
+2=2
+3=3
+4=4
+5=5
+6=6
+7=7
+8=8

@@ -1,0 +1,16 @@
+;Simplified Chinese
+[AlertEMail]
+Subject = 摄像机事件侦测通知
+Context = 请详阅附件
+[Wanip]
+title=WAN IP 地址变更通知
+line1=传送电子邮件
+line2=新的WAN IP 地址
+line3=
+[PPPoEMail]
+Subject = 宽频拨接成功
+IP = 网络地址(IP)
+CameraName = 摄像机名称
+Location = 置放地点
+Time = 日期与时间
+Charset = utf-8

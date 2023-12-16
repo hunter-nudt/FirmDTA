@@ -1,0 +1,29 @@
+#!/bin/sh
+# 
+# sysdriver: launch system driver
+#
+
+RETVAL=0
+
+umask 077
+
+case "$1" in
+  start)
+	echo $"Insert kernel module: ---->"
+	/sbin/insmod /lib/modules/ipv6.ko
+	echo $"Insert driver module: ---->"
+	/sbin/insmod /lib/modules/hwmon.ko
+	/etc/init.d/network.sh init
+	echo "Launch hw monitor..."
+	/sbin/hwmon &
+	sleep 1
+	# set time to 2011
+	echo "Set Date&Time to 2011/01/01 00:00:00"
+	/bin/date 01010000002011
+	RETVAL=$?
+	echo 
+	exit $RETVAL
+	;;
+  stop)
+	# donthing
+esac

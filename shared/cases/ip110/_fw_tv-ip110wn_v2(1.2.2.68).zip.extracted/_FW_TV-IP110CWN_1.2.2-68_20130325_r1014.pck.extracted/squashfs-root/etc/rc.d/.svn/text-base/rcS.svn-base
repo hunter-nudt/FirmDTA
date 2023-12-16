@@ -1,0 +1,30 @@
+#!/bin/sh
+
+hostname rlx-linux
+mount -t proc proc /proc
+mount -t ramfs ramfs /var
+
+# Start all init scripts in /etc/init.d
+# executing them in numerical order.
+#
+for i in /etc/rc.d/rcS.d/S??* ;do
+
+	#Ignore dangling symlinks (if any).
+	[ ! -f "$i" ] && continue
+
+	case "$i" in
+		*.sh)
+			#Source shell script for speed.
+			(
+				trap -INT QUIT TSTP
+				set start
+				. $i
+			)
+			;;
+		*)
+			# No sh extension, so fork subprocess.
+			$i start
+			;;
+	esac
+done
+

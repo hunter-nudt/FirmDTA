@@ -1,0 +1,16 @@
+;Japan
+[AlertEMail]
+Subject = ネットワークカメライベントの検知
+Context = 添付ファイルを確認してください
+[Wanip]
+title=アドレス変更通知
+line1=電子メール転送
+line2=新しいWAN IPアドレス
+line3=
+[PPPoEMail]
+Subject = PPPoE 接続成功
+IP =　IP
+CameraName = ネットワークカメラ名称
+Location = 保管場所
+Time = 日付と時間
+Charset = utf-8

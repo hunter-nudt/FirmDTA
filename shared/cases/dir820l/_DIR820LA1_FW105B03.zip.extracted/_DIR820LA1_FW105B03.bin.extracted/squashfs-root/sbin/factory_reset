@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo 1 > /proc/load_default
+
+sleep 10
+
+exit 0

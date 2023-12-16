@@ -1,0 +1,16 @@
+;traditionalChinese
+[AlertEMail]
+Subject = 攝影機事件偵測通知
+Context = 請詳閱附件
+[Wanip]
+title=WAN IP 位址改變通知
+line1=傳送電子郵件
+line2=新的 WAN IP位址
+line3=
+[PPPoEMail]
+Subject = 寬頻撥接成功
+IP = 網路位址(IP)
+CameraName = 攝影機名稱
+Location = 置放地點
+Time = 日期與時間
+Charset = utf-8

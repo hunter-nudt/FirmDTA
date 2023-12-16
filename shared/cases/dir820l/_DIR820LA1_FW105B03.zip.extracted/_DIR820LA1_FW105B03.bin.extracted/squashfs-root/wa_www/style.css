@@ -1,0 +1,96 @@
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+th.listName, td.listName{
+	text-align: left;
+	padding:0px 0pt 0px 10pt;
+	width:40%;
+}
+
+th.listSize, td.listSize{
+	text-align: center;
+	padding:0px 15px 0px 0pt;
+	width:10%;
+}
+
+th.listType, td.listType{
+	text-align: left;
+	padding:0px 0pt 0px 10pt;
+	width:20%;
+}
+
+th.listTime {
+	text-align: center;
+	width:30%;
+}
+
+td.listHide, th.listHide, td.listHead, th.listHead {
+	display:none;
+}
+
+tr.listCtx {
+	cursor: pointer;
+}
+/* Add End, Tin */
+.header_box{
+	height: 30px;
+	/*width: 40%;*/
+}
+.header {
+  text-align: left;
+  font-size: 16pt;
+}
+.left {
+  height: 25px;
+  border: 1px solid #696969;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; 
+  background-color: #808080;
+  left : 0%;
+}
+
+.right {
+  height: 25px;
+  border: 1px solid #696969;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; 
+  background-color: #808080;
+  left : 30%;
+}

@@ -1,0 +1,235 @@
+BODY,TABLE,TBODY,DL,DT,DD,TR,TD,TH,DIV,OL,UL,LI
+	{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	line-height: 1.5em;
+	}
+A {
+	COLOR: #275b9c; 
+	TEXT-DECORATION: none; 
+	font-family: arial, helvetica, verdana; }
+A:hover {
+	COLOR: #275b9c; 
+	TEXT-DECORATION: underline; 
+	font-family: arial, helvetica, verdana;}
+
+A:active {
+	COLOR: #275b9c; 
+	TEXT-DECORATION: underline; 
+	font-family: arial, helvetica, verdana, sans-serif;}
+.bluetextbold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+	font-weight: 900;
+	TEXT-DECORATION: underline; 
+	line-height: 2em;
+}
+
+A:focus { -moz-outline-style: none; }	
+
+.bluetextbold2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: 900;
+}
+HR {padding: 5px; size=1px; color=#7E91A2}
+form {margin: 0px;}
+.submenus 
+{
+font-family: Arial, Helvetica, sans-serif;
+COLOR: #FFFFFF;
+font-size:11px;
+font-weight: bold;
+}
+.submenus:active
+{
+font-family: Arial, Helvetica, sans-serif;
+COLOR: #FFFFFF; 
+font-size:11px;
+font-weight: bold;
+}
+
+.submenus:hover 
+{
+font-family: Arial, Helvetica, sans-serif;
+COLOR: #FFFFFF; 
+font-size:11px;
+font-weight: bold;
+TEXT-DECORATION: underline;
+}
+
+.submenushightlight
+{
+font-family: Arial, Helvetica, sans-serif;
+COLOR: #FFFFFF; 
+font-size:11px;
+font-weight: bold;
+TEXT-DECORATION: underline;
+}
+
+.submenushightlight:active
+{
+font-family: Arial, Helvetica, sans-serif;
+COLOR: #FFFFFF; 
+font-size:11px;
+font-weight: bold;
+TEXT-DECORATION: underline;
+}
+
+.submenushightlight:hover
+{
+font-family: Arial, Helvetica, sans-serif;
+COLOR: #FFFFFF; 
+font-size:11px;
+font-weight: bold;
+TEXT-DECORATION: underline;
+}
+.submenubg
+{
+ background: url("images/but_bg.gif")
+}
+
+.submenubg3
+{
+ background: url("images/but_bg3.gif")
+}
+.cell2 {
+	border-bottom: 1px solid #7E91A2;
+	padding-bottom: 3px;
+}
+.headerbg{
+	background: #666666 bottom;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	height: 35px;
+	text-indent: 3px;
+}
+.headerbg2{
+	background-image: url("images/bg_button2.gif");
+	border-bottom: 1px solid #000000;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	height: 28px;
+	text-indent: 5px;
+	margin-top: 15px;
+	padding: 5px;
+	}
+.bgblue{
+	background: #CCCCCC;
+	font-weight: bold;
+	width: 150px;
+	white-space: nowrap;
+	padding-top: 6px;
+	}
+	
+.bgblue2{
+	background: #FFF;
+	font-weight: bold;
+	width: 150px;
+	text-align: right;
+	white-space: nowrap;
+	padding-top: 6px;
+	}
+	
+.bggrey{
+	background: #F0F0F0;
+	font-size:12px;
+}
+.bggrey2{
+	background: #DDDDDD;
+}
+.bglblue{
+	background: #777777 ;
+	font-family: tahoma,Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #222222;
+	font-weight: bold;	
+}
+
+.input100px{
+	width: 100px;
+}
+.input150px{
+	width: 150px;
+}
+.btntest {
+	background-color: #000066;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-image: url(/gui/TE100-MP1U/images/bg_button.gif);
+	border: thin solid #000066;
+	font-size: 12px;
+	margin: 1px;
+	padding: 1px;
+	width: 80px;
+	height: 23px;
+}
+
+.ButtonSmall{
+	background-color: #6a89b5;
+    font: bold 11px verdana,sans-serif;
+    color:#FFFFFF; 
+	border:2px solid #5a79a8;
+    border-color:#c8d6e8 #1d2569 #000000 #AED9F2;
+	background-image: url("images/bg_button.gif");
+    margin:1px;
+	width:100px; 
+	height:24px;
+	cursor: pointer;
+	}
+.ButtonSmall2{
+background-color: #333333;
+    font: bold 11px verdana,sans-serif;
+    color:#FFFFFF; 
+	border:1px solid;
+	background-image: url("images/bg_button.gif");
+    margin: 0 10px 0 0;
+	height:30px;
+	cursor: pointer;
+	padding:3px 3px 3px 3px;
+	white-space: nowrap;
+	}
+.box_tn
+{
+	border: 0px solid #333333;
+	margin: 5px 5px 5px 5px;
+}
+.box_tn2
+{
+	border: 0px solid #333333;
+	margin: 0px 5px 0px 5px;
+}
+.box_tn3
+{
+	border: 0px solid #333333;
+	margin: 5px 5px 0px 5px;
+}
+.box_subtn
+{
+	border: 1px solid #CCCCCC;
+	margin: 10px 0 0 0;
+}
+.tabBigFrame{ background: none; border: none;  }
+.tabBigTitle{ width: 100%;  background: #000000; box-sizing: border-box; -moz-box-sizing: border-box; border: 1px solid #000000;
+              }
+              
+ .txt_white{ color: #FFFFFF  }            
+ 
+form{margin:0; padding:0  }     
+.greybluebg
+{
+background: #555555;
+	font-family: tahoma,Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.box_ip
+{
+	width:35px;
+}

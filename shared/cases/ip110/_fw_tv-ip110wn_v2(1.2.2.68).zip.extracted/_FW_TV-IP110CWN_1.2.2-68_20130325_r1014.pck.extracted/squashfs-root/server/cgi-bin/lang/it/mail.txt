@@ -1,0 +1,16 @@
+;Italian
+[AlertEMail]
+Subject = Rilevato un evento dalla telecamera
+Context = Controlla l'allegato
+[Wanip]
+title=Notifica del cambiamento IP della WAN
+line1=Invia mail
+line2=Il nuovo IP WAN e'
+line3=
+[PPPoEMail]
+Subject =  PPPoE collegato
+IP = IP
+CameraName = Nome della telecamera
+Location = Localizzazione 
+Time = Ora
+Charset = utf-8

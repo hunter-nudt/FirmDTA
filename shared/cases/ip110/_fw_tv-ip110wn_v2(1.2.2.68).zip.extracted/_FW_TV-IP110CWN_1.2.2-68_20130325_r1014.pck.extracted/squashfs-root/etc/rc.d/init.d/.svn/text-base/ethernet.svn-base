@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# ethernet
+# ethernet is the tool to configure lo, and local ip. It read the 
+# configuration from TinyDB and set ethernet by uchcp or static ip
+# 
+
+RETVAL=0
+umask 077
+
+case "$1" in
+  start)
+	/etc/init.d/network.sh netsetup
+	/sbin/ifconfig -a
+	echo
+	exit $RETVAL
+	;;
+  stop)
+	echo $"Shutting down ethernet services: "
+	/sbin/ifdown eth0
+	/sbin/ifdown wlan0
+	/sbin/ifdown br0
+	/sbin/brctl delbr br0
+	RETVAL=$?
+	echo
+	exit $RETVAL
+	;;
+esac
+

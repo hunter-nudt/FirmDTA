@@ -1,0 +1,7 @@
+#!/bin/sh
+
+tar -xf $1 -C /mydlink/
+
+reboot
+
+exit 0

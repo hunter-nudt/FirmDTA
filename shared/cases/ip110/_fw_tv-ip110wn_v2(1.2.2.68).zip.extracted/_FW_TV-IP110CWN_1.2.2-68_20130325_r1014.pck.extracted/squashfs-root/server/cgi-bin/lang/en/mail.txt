@@ -1,0 +1,16 @@
+;English
+[AlertEMail]
+Subject = Camera event detected
+Context = Please see attachment
+[Wanip]
+title=WAN IP Changed Notify
+line1=Send Mail
+line2=New WAN IP is
+line3=
+[PPPoEMail]
+Subject = PPPoE connected
+IP = IP
+CameraName = Camera Name
+Location = Location
+Time = Time
+Charset = utf-8

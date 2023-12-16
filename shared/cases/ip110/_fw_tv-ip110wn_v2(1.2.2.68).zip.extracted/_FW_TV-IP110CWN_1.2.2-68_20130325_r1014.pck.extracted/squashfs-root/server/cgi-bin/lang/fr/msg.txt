@@ -1,0 +1,151 @@
+;French
+[resolution]
+0=VGA
+1=QVGA
+2=QQVGA
+[Viewer]
+0=Applet Java
+1=Image immobile
+2=Serveur Push
+[enable]
+0=Désactiver
+1=Activier
+[quality]
+0=Le plus bas
+1=Bas
+2=Normal
+3=Haut
+4=Le plus haut
+[Policy]
+0=statique
+1=DHCP
+2=PPPoE
+[AuthMode]
+0=Ouvrir
+1=clé partagée
+2=WPA-PSK
+3=WPA2-PSK
+4=WPA-PSK/WPA2-PSK
+[SecMethod]
+0=Aucun
+1=WEP
+2=TKIP
+3=AES
+4=Auto(TKIP/AES)
+[Mode]
+0=Infrastructure
+1=Ad hoc
+[ModelName]
+0=
+1=Sans fil
+[Always]
+0=always
+[Usb]
+0=Usb non disponible
+[notConnected]
+0=non connecté
+[errHttp]
+0=Http téléchargé bien!
+1=Http connecté raté
+2=Http écrire fichier raté
+[errFtp]
+0=Ftp téléchargé bien!
+1=Ftp connecté raté
+2=Ftp écrire fichier raté
+[errEmail]
+0=Paramètre du serveur Email est bien!
+1=Envoyer Email raté
+[errSamba]
+0=Test d'écriture de serveur est bien!
+1=Le serveur a déjà monté avec l'ancien paramètre. Test arrêtait.
+2=Serveur monter raté
+3=Fichier écrire raté
+4=Échoué démonter le serveur
+[errJabber]
+0=Paramètre du serveur Jabber est bien!
+1=Authentification raté
+2=Serveur lookup raté
+3=Connexion temps mort
+4=Authorisation raté
+5=Message instantané envoyer raté
+[testFtp]
+0=C'est un test ftp
+[testSamba]
+0=C'est un test samba
+[testEmail]
+0=Mail de test
+[testEmailTitle]
+0=Mail de test
+[errFile]
+0=Ce fichier n'est pas un fichier config valide
+[noFile]
+0=Aucun fichier
+[updateRun]
+0=Processus de téléchagement de microprogramme est déjà marché
+[notCorrect]
+0=pas un modèle correct
+[notValid]
+0=pas un microgramme valide
+[fileErr]
+0=erreur de fichier
+[3gpp]
+0=Désactiver
+1=Activer sans audio
+2=Aciver avec audio
+[Language]
+0=English
+1=繁體中文
+2=简体中文
+3=Deutsch
+4=Français
+5=Español
+6=Italiano
+7=日本語
+[RTSP Auth]
+0=Désactiver
+1=Élémentaire
+2=Digest
+[auth]
+0=Aucun
+1=SMTP
+[encrypt]
+0=Désactiver
+1=Activier
+[starttls]
+0=Désactiver
+1=Activier
+[SD]
+0=Carte SD non diponible
+1=Carte SD est en lecture seule
+[IR]
+0=Auto
+1=Fermé
+[IRCut]
+0=Auto
+1=Mode jour
+[category]
+0=Film
+1=Automobile
+2=Musique
+3=Animaux
+4=Sports
+5=Voyage
+6=Jeux
+7=Comédie
+8=People
+9=Nouvelles
+10=Entertainment
+11=Education
+12=Howto
+13=sans but lucratif
+14=Technology
+[Startup]
+0=Aucun
+1=1
+2=2
+3=3
+4=4
+5=5
+6=6
+7=7
+8=8

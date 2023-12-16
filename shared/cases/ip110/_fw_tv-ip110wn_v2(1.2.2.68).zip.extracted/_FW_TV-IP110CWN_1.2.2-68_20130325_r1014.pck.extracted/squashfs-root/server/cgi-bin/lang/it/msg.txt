@@ -1,0 +1,151 @@
+;Italian
+[resolution]
+0=VGA
+1=QVGA
+2=QQVGA
+[Viewer]
+0=Java Applet
+1=Fermo immagine
+2=Server Push
+[enable]
+0=Invalidare
+1=Consentire
+[quality]
+0=Minore
+1=Bassa
+2=Normale
+3=Alta
+4=Altissima
+[Policy]
+0=Statico 
+1=DHCP
+2=PPPoE
+[AuthMode]
+0=Aperta
+1=PreShared Key
+2=WPA-PSK
+3=WPA2-PSK
+4=WPA-PSK/WPA2-PSK
+[SecMethod]
+0=Nessuno
+1=WEP
+2=TKIP
+3=AES
+4=Auto(TKIP/AES)
+[Mode]
+0=Infrastruttura
+1=Ad-Hoc
+[ModelName]
+0=
+1=Wireless
+[Always]
+0=always
+[Usb]
+0=Usb non disponibile
+[notConnected]
+0=Non Collegato
+[errHttp]
+0=Uploading HTTP OK!
+1=Collegamento HTTP fallito
+2=Scrittura HTTP Fallita
+[errFtp]
+0=Ftp uploading è  OK!
+1=Ftp collegamento fallito
+2=Ftp archivio di scrittura fallito
+[errEmail]
+0=Impostazioni server Email corrette!
+1=Invio del email fallito
+[errSamba]
+0=La prova di scrittura sul server è OK
+1=La risorsa del server e' gia' stata montata usando la precedente configurazione. Prova terminata.
+2=Mount della risorsa fallita.
+3=Scrittura del archivio fallito
+4=Unmount della risorsa fallita
+[errJabber]
+0=Impostazioni server IM corrette!
+1=Autenticazione fallita
+2=Operazione di ricerca del server fallita
+3=Timeout connessione
+4=Autorizzazione fallita
+5=Invio del messaggio istante fallito
+[testFtp]
+0=Questo e' un test ftp
+[testSamba]
+0=Questo e' un test samba
+[testEmail]
+0=Test email
+[testEmailTitle]
+0=Test email
+[errFile]
+0=Il archivio non è un archivio di configurazione valida
+[noFile]
+0=Nessun archivio
+[updateRun]
+0=il processo di aggiornamento fimrware e' gia' in funzione
+[notCorrect]
+0=non è un modello corretto
+[notValid]
+0=non è un firmware corretto
+[fileErr]
+0=Errore file
+[3gpp]
+0=Disabilitato
+1=Abilita con audio
+2=Abilita senza audio
+[Language]
+0=English
+1=繁體中文
+2=简体中文
+3=Deutsch
+4=Français
+5=Español
+6=Italiano
+7=日本語
+[RTSP Auth]
+0=Disabilitato
+1=Basic
+2=Digest
+[auth]
+0=Nessuno
+1=SMTP
+[encrypt]
+0=Invalidare
+1=Consentire
+[starttls]
+0=Invalidare
+1=Consentire
+[SD]
+0=Carta SD non disponibile
+1=Carta SD è letta soltanto 
+[IR]
+0=Automatico
+1=OFF
+[IRCut]
+0=Automatico
+1=Giornata modalita`
+[category]
+0=Film
+1=Autos
+2=Musica
+3=Animali
+4=Sport
+5=Travel
+6=Giochi
+7=Comedy
+8=People
+9=News
+10=Entertainment
+11=Istruzione
+12=Howto
+13=Nonprofit
+14=Tecnologia
+[Startup]
+0=Nessuno
+1=1
+2=2
+3=3
+4=4
+5=5
+6=6
+7=7
+8=8

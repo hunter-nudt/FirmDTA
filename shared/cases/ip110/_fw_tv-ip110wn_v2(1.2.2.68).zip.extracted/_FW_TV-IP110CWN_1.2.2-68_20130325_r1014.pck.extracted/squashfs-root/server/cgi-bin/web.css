@@ -1,0 +1,125 @@
+a.a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+	/*background-color: #99FFFF;*/
+}
+a.a:visited {	color: #FFFFFF;	text-decoration: none;}
+a.a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+	}
+a.a:active {
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.b:link {	color: #0000CC;	text-decoration: none;}
+a.b:visited {	color: #0000CC;	text-decoration: none;}
+a.b:hover {	color: #0000CC;	text-decoration: underline;}
+a.b:active {	color: #CC0000;	text-decoration: underline;}
+a.d:link {	text-decoration: underline;	color: #333333;}
+a.d:visited {	text-decoration: underline;	color: #333333;}
+a.d:hover {
+	text-decoration: underline;
+	color: #333333;
+	font-weight: bold;
+}
+a.d:active {	text-decoration: underline;	color: #0000FF;}
+a.e:link {	text-decoration: underline;	color: #0000ff;}
+a.e:visited {	text-decoration: underline;	color: #0000ff;}
+a.e:hover {	text-decoration: underline;	color: #0000ff;}
+a.e:active {	text-decoration: underline;	color: #0000ff;}
+a.c:link {	text-decoration: none;	color: #333333;}
+a.c:visited {	text-decoration: none;	color: #333333;}
+a.c:hover {	text-decoration: underline;	color: #339900;}
+a.c:active {	text-decoration: underline;	color: #006600;}
+a.f:link {
+	color: #4b688b;
+	text-decoration: none;
+}
+a.f:visited {	color: #4b688b;	text-decoration: none;}
+a.f:hover {
+	color: #4b688b;
+	text-decoration: underline;
+	}
+a.f:active {
+	color: #4b688b;
+	text-decoration: underline;
+}
+#navigationin a {
+background:url(img/but.gif)
+}
+#navigationin a:hover {
+background:url(img/but_over.gif)
+}
+.stylebanner {
+background-color: #E6E6CA;
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+}
+.t22b {
+	font-size: 22px;
+	font-weight: bold;
+}
+.t12 {
+	font-size: 12px;
+	font-weight: bold;
+}
+.t16 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.tdline {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 5px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: E6E6CA;
+	border-right-color: E6E6CA;
+	border-bottom-color: E6E6CA;
+	border-left-color: E6E6CA;
+}
+.box_ip{
+	width:35px;
+}
+.box_text{
+	width:150px;
+}
+.box_longtext{
+	width:200px;
+}
+.warnmsg{
+	color: #FF0000;
+}
+.styleen{
+	font-size: 10px;
+}
+.styletc{
+	font-size: 10px;
+}
+.stylesc{
+	font-size: 11px;
+}
+.stylede{
+	font-size: 10px;
+}
+.stylefr{
+	font-size: 10px;
+}
+.stylees{
+	font-size: 10px;
+}
+.styleit{
+	font-size: 10px;
+}
+.stylejp{
+	font-size: 10px;
+}

@@ -1,0 +1,151 @@
+;English
+[resolution]
+0=VGA
+1=QVGA
+2=QQVGA
+[Viewer]
+0=Java Applet
+1=Still Image
+2=Server Push
+[enable]
+0=Disable
+1=Enable
+[quality]
+0=Lowest
+1=Low
+2=Normal
+3=High
+4=Highest
+[Policy]
+0=Static
+1=DHCP
+2=PPPoE
+[AuthMode]
+0=Open
+1=Shared-Key
+2=WPA-PSK
+3=WPA2-PSK
+4=WPA-PSK/WPA2-PSK
+[SecMethod]
+0=None
+1=WEP
+2=TKIP
+3=AES
+4=Auto(TKIP/AES)
+[Mode]
+0=Infrastructure
+1=Ad-Hoc
+[ModelName]
+0=
+1=Wireless
+[Always]
+0=always
+[Usb]
+0=Usb not available
+[notConnected]
+0=Not Connected
+[errHttp]
+0=Http uploading is OK!
+1=Http connecting failed
+2=Http writing file failed
+[errFtp]
+0=FTP uploading is OK!
+1=FTP connecting failed
+2=FTP writing file failed
+[errEmail]
+0=Email server setting is OK!
+1=Email sending failed
+[errSamba]
+0=Server write test is OK!
+1=The server has already mounted using the old setting. Test stopped.
+2=Server mounting failed
+3=File writing failed
+4=Server umounting failed
+[errJabber]
+0=Jabber server setting is OK!
+1=Authentication failed
+2=Server lookup failed
+3=Connection timeout
+4=Authorization failed
+5=Instant message sending failed
+[testFtp]
+0=This is a ftp test
+[testSamba]
+0=This is a samba test
+[testEmail]
+0=Test mail
+[testEmailTitle]
+0=Test mail
+[errFile]
+0=The file is not a valid config file
+[noFile]
+0=No file
+[updateRun]
+0=firmware updating process is already running
+[notCorrect]
+0=not a correct model
+[notValid]
+0=not a valid firmware
+[fileErr]
+0=File error
+[3gpp]
+0=Disable
+1=Enable With Audio
+2=Enable Without Audio
+[Language]
+0=English
+1=繁體中文
+2=简体中文
+3=Deutsch
+4=Français
+5=Español
+6=Italiano
+7=日本語
+[RTSP Auth]
+0=Disable
+1=Basic
+2=Digest
+[auth]
+0=None
+1=SMTP
+[encrypt]
+0=Disable
+1=Enable
+[starttls]
+0=Disable
+1=Enable
+[SD]
+0=SD Card not available
+1=SD Card is read only
+[IR]
+0=Auto
+1=OFF
+[IRCut]
+0=Auto
+1=Day mode
+[category]
+0=Film
+1=Autos
+2=Music
+3=Animals
+4=Sports
+5=Travel
+6=Games
+7=Comedy
+8=People
+9=News
+10=Entertainment
+11=Education
+12=Howto
+13=Nonprofit
+14=Technology
+[Startup]
+0=None
+1=1
+2=2
+3=3
+4=4
+5=5
+6=6
+7=7
+8=8

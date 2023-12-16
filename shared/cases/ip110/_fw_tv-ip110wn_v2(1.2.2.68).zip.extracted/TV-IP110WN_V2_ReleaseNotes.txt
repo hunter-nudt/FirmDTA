@@ -1,0 +1,58 @@
+TV-IP110WN(v2.0R)
+
+
+Firmware: V1.2.2 build 68
+Release Date: 4/2013
+
+1. Upload.asp removed.
+2. Updated save configuration file encryption type.
+
+
+Note:
+1. To complete the firmware update process you must perform a factory reset after the firmware upgrade. We strongly recommend that you change the camera's administrator's account password
+2. Please do not save the camera's configuration file from the old firmware and restore it after the firmware upgrade
+
+
+
+Firmware: V1.2.2 build 66
+Release Date: 3/2012
+
+
+1. Revised Date/Time stamp  
+  
+
+Note: 
+1.To complete the firmware update process you must perform a factory reset after the firmware upgrade.  
+
+
+
+Firmware: V1.2.2 build 65
+Release Date: 3/2012
+
+
+1. Date/Time stamp added for Internet Explorer.
+
+Note: 
+1.To complete the firmware update process you must perform a factory reset after the firmware upgrade.  
+2.To record the Date/Time stamp in SecurView Pro, you must upgrade the software to SecurView Pro (2.0.0.0)_03032012.
+
+
+Firmware: v1.2.2 build 64
+Release Date: 2/2012
+
+1. Improved security 
+
+Note: 
+1.Please do not save the camera's configuration file from the old firmware and restore it after the firmware upgrade.
+2.After a successful firmware upgrade, please reset the camera to factory default and reconfigure the camera. 
+  We strongly recommend that you change the camera's administrator's account password.
+
+Firmware: v1.2.1 build 63
+Release Date: 9/2011
+
+- Add UPnP port forwarding feature
+
+
+Firmare: v1.2.0 build 52
+- Initial release.
+

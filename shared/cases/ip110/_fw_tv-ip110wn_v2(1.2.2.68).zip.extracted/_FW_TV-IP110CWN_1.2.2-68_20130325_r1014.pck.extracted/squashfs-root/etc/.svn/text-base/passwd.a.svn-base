@@ -1,0 +1,3 @@
+root:x:0:0:root:/:/dev/null
+nobody:x:0:0:nobody:/:/dev/null
+admin:$1$IM$qGlO3prTNO7RXgwKIBauq.:0:0:admin:/:/bin/ash
